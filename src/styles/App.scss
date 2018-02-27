@@ -1,0 +1,30 @@
+html,body{
+  bacground-color:#222;
+  width:100%;
+  height:100%;
+}
+
+.content{
+  width:100%;
+  height:100%;
+}
+
+.stage{
+  position: relative;
+  width: 100%;
+  height: 680px;
+}
+/* stage -- end */
+
+/* image -- state */
+
+.img-sec{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backgroud-color: #ddd;
+}
+/* image -- end */
+
+/* */
