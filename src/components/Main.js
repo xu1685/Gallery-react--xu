@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 //css
+=======
+>>>>>>> origin/master
 require('normalize.css/normalize.css');
 require('styles/App.scss');
 
 import React from 'react';
+<<<<<<< HEAD
 import ReactDOM from 'react-dom'
 
 //获取图片相关的数据
@@ -15,11 +19,24 @@ imageDatas = (function genImageUrl(imageDatasArr)
     var singleImageData = imageDatasArr[i];
     singleImageData.imageUrl = require('../images/' + singleImageData.fileName);
     imageDatasArr[i] = singleImageData;
+=======
+
+let yeomanImage = require('../images/yeoman.png');
+// 利用自执行函数，将图片名信息转成图片URL路径信息
+// let imageDatas = require('../data/imageDatas.json')
+imageDatas = (function genImageUrl(imageDatasArr)
+{
+  for(var i = 0, j = imageDatasArr.length; i<j ; i++){
+  	var singleImageData = imageDatasArr[i];
+  	singleImageData.imageUrl = require('../images/' + singleImageData.fileName);
+  	imageDatasArr[i] = singleImageData;
+>>>>>>> origin/master
   }
 
   return imageDatasArr;
 })(imageDatas);
 
+<<<<<<< HEAD
 
 
 //产生范围内的随机数
@@ -311,6 +328,15 @@ class AppComponent extends React.Component {
         </section>
         <nav className="controlerr-nav">
           {controllerUnits}
+=======
+class AppComponent extends React.Component {
+  render() {
+    return (
+      <section className="stage">
+        <section className="img-sec">
+        </section>
+        <nav className="controlerr-nav">
+>>>>>>> origin/master
         </nav>
       </section>
     );
