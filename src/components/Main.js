@@ -173,7 +173,7 @@ class AppComponent extends React.Component {
         imgsArrangeCenterArr[0] = {
           rotate: 0,
           pos: centerPos,
-          isCenter: true,
+          isCenter: true
         }
 
         //布局上侧图片
